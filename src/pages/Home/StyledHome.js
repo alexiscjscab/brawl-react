@@ -27,22 +27,40 @@ export const StyledHome = styled.div`
     margin: 10px 0;
     position: relative;
     p{
-      text-align: right;
-      font-size: 1.1rem;
       letter-spacing: 1px;
       font-weight: 700;
       margin-right: 2px;
-      text-shadow: 0px 0px 2px #fff;
+      background: rgba(230,230,230,0.5);
+      position: absolute;
+      bottom: -20px;
+      right: 0;
+      text-align: right;
+      padding: 2px;
     }
 
     h3{;
       margin-left: 5px;
       position: absolute;
-      bottom: 25px;
-      color: #fff;
-      background: rgba(30,30,30,0.5);
+      bottom: 15px;
+      /* color: #fff; */
       border-radius: 5px;
       padding: 5px;
+      font-weight: bold;
+      background: #000;
+    }
+
+    h4{
+      position: absolute;
+      top: 10px;
+      color: #fff;
+      z-index: 1;
+      margin-left: 5px;
+      letter-spacing: 1px;
+      font-weight: 300;
+      left: 2px;
+      background: #000;
+      padding: 8px;
+      border-radius: 50px;
     }
 
     img{
@@ -53,12 +71,10 @@ export const StyledHome = styled.div`
       border-radius: 25px;
       filter: grayscale(50%);
       &:hover{
-        transform: translateY(-5px);
+        transform: translate3d(10px, 10px, 0) rotate(5deg);
         filter: grayscale(0%);
         box-shadow: 0px 0px 10px #fff;
       }
     }
-
-    
   }
 `

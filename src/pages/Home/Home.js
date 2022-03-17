@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Background } from '../../Components/Background/Background';
 import Filter from '../../Components/Filter/Filter';
@@ -17,25 +17,35 @@ const Home = () => {
 
   console.log(brawlers);
   return (
-    <Background image={'https://i.pinimg.com/originals/a3/ff/1f/a3ff1f383a66211e265f2109de207b66.jpg'}>
+    <Background
+      image={
+        'https://i.pinimg.com/originals/a3/ff/1f/a3ff1f383a66211e265f2109de207b66.jpg'
+      }
+    >
       <StyledHome>
         <h1>Brawlers</h1>
-        <Search/>
+        <Search />
         <Filter />
-          <div className='cards'>
-            {
-              brawlers.length > 0 && brawlers.map((brawler) => (
-                  <div key={brawler.id} className='card'>
-                    <img src={brawler.imageUrl} alt={brawler.name}/>
-                    <h3>{brawler.name}</h3>
-                    <p>{brawler.class.name}</p> 
-                  </div>
-                ))
-            }
-          </div>
+        <div className='cards'>
+          {brawlers.length > 0 &&
+            brawlers.map((brawler) => {
+              let id = Number(brawler.id.toString().slice(-2)) + 1;
+              let idNumber = id > 10 ? id : `0${id}`;
+              return (
+                <div key={brawler.id} className='card'>
+                  <h4>{idNumber}</h4>
+                  <img src={brawler.imageUrl} alt={brawler.name} />
+                  <h3 style={{ color: `${brawler.rarity.color}` }}>
+                    {brawler.name}
+                  </h3>
+                  <p>{brawler.class.name}</p>
+                </div>
+              );
+            })}
+        </div>
       </StyledHome>
     </Background>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

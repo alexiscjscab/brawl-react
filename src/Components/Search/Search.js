@@ -53,7 +53,6 @@ const StyledSearch = styled.div`
     transition: all 0.3s ease-in-out;
     &:hover,&:focus{
       width: 120px;
-      text-align: center;
     }
     &::placeholder{
       color: #fff;
