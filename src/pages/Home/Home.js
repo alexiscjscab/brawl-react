@@ -30,7 +30,7 @@ const Home = () => {
           {brawlers.length > 0 &&
             brawlers.map((brawler) => {
               let id = Number(brawler.id.toString().slice(-2)) + 1;
-              let idNumber = id > 10 ? id : `0${id}`;
+              let idNumber = id > 9 ? id : `0${id}`;
               return (
                 <div key={brawler.id} className='card'>
                   <h4>{idNumber}</h4>

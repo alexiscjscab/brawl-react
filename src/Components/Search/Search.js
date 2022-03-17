@@ -71,7 +71,7 @@ const StyledSearch = styled.div`
     background: rgba(70,70,70,1);
     transition: all 0.3s ease-in-out;
     &:hover,&:focus{
-      background: rgba(70,170,70,1);
+      background: #00ff44;
       color: #000;
     }
   }

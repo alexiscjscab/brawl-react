@@ -81,6 +81,7 @@ const StyledFilter = styled.div`
       letter-spacing: 1px;
       padding: 5px;
       font-weight: bold;
+      cursor: pointer ;
     }
     input {
       margin-right: 10px;
@@ -98,6 +99,7 @@ const StyledFilter = styled.div`
       letter-spacing: 1px;
       padding: 5px;
       font-weight: 800;
+      cursor: pointer;
     }
     input{
       margin: 0 10px;
