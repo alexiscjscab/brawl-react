@@ -47,6 +47,7 @@ export const StyledMaps = styled.div`
     h3{
       padding: 5px;
       font-weight: bold;
+      text-transform: capitalize;
     }
   }
 `
