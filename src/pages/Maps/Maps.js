@@ -6,7 +6,6 @@ import FilterMaps from '../../Components/Filter/FilterMaps';
 import { fetchMaps } from '../../store/slices/maps';
 import { StyledMaps } from './StyledMaps';
 import { Triangle } from 'react-loader-spinner';
-import brawlers from '../../store/slices/brawlers';
 
 const Maps = () => {
   const dispatch = useDispatch();
