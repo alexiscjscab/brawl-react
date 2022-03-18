@@ -5,10 +5,7 @@ import NavBar from './Components/NavBar/NavBar';
 import Maps from './pages/Maps/Maps';
 
 
-
 const App = () => {
-  
-
   return (
     <React.Fragment>
       <NavBar />
