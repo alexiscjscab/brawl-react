@@ -13,7 +13,7 @@ export const StyledHome = styled.div`
   .cards{
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     grid-gap:  30px;
     justify-items: center;
     align-items: center;    

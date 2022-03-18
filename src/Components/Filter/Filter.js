@@ -76,12 +76,13 @@ const StyledFilter = styled.div`
       grid-template-columns: repeat(2, auto);
     }
     label {
-      background: rgba(30, 30, 30, 0.5);
+      background: #000;
       font-size: 1.2rem;
       letter-spacing: 1px;
       padding: 5px;
       font-weight: bold;
       cursor: pointer ;
+      border-radius: 10px;
     }
     input {
       margin-right: 10px;

@@ -12,7 +12,7 @@ export const StyledMaps = styled.div`
   .cards {
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     grid-gap: 30px;
     justify-items: center;
     align-items: center;
@@ -27,7 +27,8 @@ export const StyledMaps = styled.div`
     margin: 10px 0;
     background: rgba(230,230,230,0.5);
     box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
-    img{
+    .image__maps{
+      
       width: 200px;
       height: 200px;
       cursor: pointer;
@@ -37,6 +38,11 @@ export const StyledMaps = styled.div`
       :hover{ 
         filter: grayscale(0%);
       }
+    }
+
+    .image__gameMode{
+      width: 40px;
+      height: 40px;
     }
     h3{
       padding: 5px;
