@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const StyledMaps = styled.div`
-  min-height: 100vh;
   h1{
     text-align: center;
     letter-spacing: 2px;
@@ -49,5 +48,10 @@ export const StyledMaps = styled.div`
       font-weight: bold;
       text-transform: capitalize;
     }
+  }
+
+  .loader{
+    margin: 6rem 0;
+    padding: 10px;
   }
 `

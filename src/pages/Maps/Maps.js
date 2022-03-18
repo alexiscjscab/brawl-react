@@ -1,17 +1,25 @@
-import React, { useEffect } from 'react';
+/* eslint-disable */
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Background } from '../../Components/Background/Background';
 import FilterMaps from '../../Components/Filter/FilterMaps';
 import { fetchMaps } from '../../store/slices/maps';
 import { StyledMaps } from './StyledMaps';
-
+import { Triangle } from 'react-loader-spinner';
+import brawlers from '../../store/slices/brawlers';
 
 const Maps = () => {
   const dispatch = useDispatch();
   const maps = useSelector((state) => state.maps.list);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    maps.length === 0 && dispatch(fetchMaps());
+    if(maps.length  === 0){
+      dispatch(fetchMaps())
+      setLoading(true)
+    }else{
+      setLoading(true)
+    }
   }, [dispatch]);
 
   console.log('filter',maps);
@@ -20,9 +28,12 @@ const Maps = () => {
     <Background image='https://wallpaperaccess.com/full/2951789.jpg'>
       <StyledMaps>
         <h1>Maps</h1>
-        <FilterMaps />
+        {
+          loading && <FilterMaps />
+        }
+        
         <div className='cards'>
-          {maps.length > 0 &&
+          {loading && maps.length > 0 ? (
             maps.map((map) => {
               return (
                 <div key={map.id} className='card'>
@@ -32,6 +43,15 @@ const Maps = () => {
                 </div>
               )
             })
+          ) : (
+            <div className='loader'>
+              <Triangle 
+              color='#000' 
+              height={130} 
+              width={130} ariaLabel='loading-indicator'
+              />
+            </div>
+          )
           }
         </div>
       </StyledMaps>

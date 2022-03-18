@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 
 export const StyledHome = styled.div`
-  min-height: 100vh;
   h1 {
     text-align: center;
     letter-spacing: 2px;
@@ -76,5 +75,10 @@ export const StyledHome = styled.div`
         box-shadow: 0px 0px 10px #fff;
       }
     }
+  }
+
+  .loader{
+    margin: 6rem 0;
+    padding: 10px;
   }
 `
