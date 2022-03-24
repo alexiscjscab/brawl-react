@@ -1,4 +1,5 @@
 {
+  "homepage": "https://alexiscjscab.github.io/brawl-react",
   "name": "client",
   "version": "0.1.0",
   "private": true,
@@ -14,8 +15,12 @@
     "react-scripts": "0.9.5",
     "styled-components": "^5.3.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
