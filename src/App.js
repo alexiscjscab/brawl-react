@@ -10,6 +10,7 @@ const App = () => {
     <React.Fragment>
       <NavBar />
       <Routes>
+        <Route path="/brawl-react" element={<Home />} />
         <Route path="/" element={<Home />} />
         <Route path="/maps" element={<Maps />} />
       </Routes>
