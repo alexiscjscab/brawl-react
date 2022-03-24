@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/brawl-react/static/css/main.688145d6.css",
+    "main.js": "/brawl-react/static/js/main.23613169.js",
+    "index.html": "/brawl-react/index.html",
+    "main.688145d6.css.map": "/brawl-react/static/css/main.688145d6.css.map",
+    "main.23613169.js.map": "/brawl-react/static/js/main.23613169.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.688145d6.css",
+    "static/js/main.23613169.js"
+  ]
+}
