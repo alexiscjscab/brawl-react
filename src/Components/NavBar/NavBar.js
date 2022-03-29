@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
+
+  const [colorChange, setColorChange] = useState(false);
+  const changeColor = () => {
+    if(window.scrollY >= 100) {
+      setColorChange(true);
+    }else{
+      setColorChange(false);
+    }
+  }
+  
+  window.addEventListener('scroll', changeColor);
+
   return (
-    <Nav>
+    <Nav color={colorChange}>
       <div className='home'>
         <Link to='/'>Home</Link>
       </div>
@@ -23,14 +35,14 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: transparent;
+  background: ${props => props.color ? 'transparent' : 'rgba(30,30,30,0.5)'};
   padding: 0.5rem 1rem;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 2;
   
-  }
+  
 
   .home{
     margin-left: 10px;
