@@ -25,7 +25,9 @@ const Maps = () => {
   return (
     <Background image='https://wallpaperaccess.com/full/2951789.jpg'>
       <StyledMaps>
-        <h1>Maps</h1>
+        <div className='title'>
+          <h1>Maps</h1>
+        </div>
         {
           loading && <FilterMaps />
         }

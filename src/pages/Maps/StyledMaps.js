@@ -1,11 +1,14 @@
 import styled from 'styled-components';
 
 export const StyledMaps = styled.div`
-  h1{
-    text-align: center;
+  .title {
     letter-spacing: 2px;
-    font-size: 2.5rem;
-    font-weight: 450;
+    padding: 10px;
+    text-align: center;
+    h1 {
+      margin-top: 2.5rem;
+      text-shadow: 0px 0px 10px #fff;
+    }
   }
 
   .cards {
@@ -25,7 +28,14 @@ export const StyledMaps = styled.div`
     align-items: center;
     margin: 10px 0;
     background: rgba(230,230,230,0.5);
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px #000;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background: rgba(30,30,30,1);
+      color: #fff;
+      box-shadow: 0px 0px 10px #fff inset, 0px 0px 10px #fff;
+    }
+
     .image__maps{
       
       width: 200px;

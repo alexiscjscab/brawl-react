@@ -30,7 +30,10 @@ const Home = () => {
   return (
     <Background image='https://i.pinimg.com/originals/a3/ff/1f/a3ff1f383a66211e265f2109de207b66.jpg'>
       <StyledHome>
-        <h1>Brawlers</h1>
+        <div className='title'>
+          <h1>Brawlers</h1>
+        </div>
+
         {loading && (
           <div>
             <Search />

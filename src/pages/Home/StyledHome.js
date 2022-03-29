@@ -2,11 +2,14 @@ import styled from 'styled-components';
 
 
 export const StyledHome = styled.div`
-  h1 {
-    text-align: center;
+  .title {
     letter-spacing: 2px;
-    font-size: 2.5rem;
-    font-weight: 450;
+    padding: 10px;
+    text-align: center;
+    h1 {
+      margin-top: 2.5rem;
+      text-shadow: 0px 0px 10px #fff;
+    }
   }
 
   .cards{
