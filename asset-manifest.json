@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/brawl-react/static/css/main.688145d6.css",
-    "main.js": "/brawl-react/static/js/main.0646ae2c.js",
+    "main.js": "/brawl-react/static/js/main.f39128ee.js",
     "index.html": "/brawl-react/index.html",
     "main.688145d6.css.map": "/brawl-react/static/css/main.688145d6.css.map",
-    "main.0646ae2c.js.map": "/brawl-react/static/js/main.0646ae2c.js.map"
+    "main.f39128ee.js.map": "/brawl-react/static/js/main.f39128ee.js.map"
   },
   "entrypoints": [
     "static/css/main.688145d6.css",
-    "static/js/main.0646ae2c.js"
+    "static/js/main.f39128ee.js"
   ]
 }
