@@ -19,13 +19,14 @@ export const StyledHome = styled.div`
     grid-gap:  30px;
     justify-items: center;
     align-items: center;    
-    align-content: center;
   }
 
 
   .card{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 10px 0;
     position: relative;
     p{

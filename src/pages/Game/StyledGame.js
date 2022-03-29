@@ -16,14 +16,9 @@ export const StyledGame = styled.div`
     margin-top: 20px;
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat(3, minmax(70px, 1fr));
-    grid-gap: 10px;
-    @media (max-width: 768px) {
-      grid-template-columns: repeat(2, minmax(70px, 1fr));
-    }
-    @media (max-width: 500px) {
-      grid-template-columns: repeat(1, minmax(70px, 1fr));
-    }
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   }
 
   .card {
@@ -32,11 +27,10 @@ export const StyledGame = styled.div`
     justify-content: center;
     align-items: center;
     margin: 5px 0;
-    background: rgba(230, 230, 230, 0.2);
     transition: all 0.3s ease-in-out;
-
+    padding: 10px;
+    text-align: center;
     &:hover{
-      background: rgba(230, 230, 230, 0.5);
       box-shadow: 0px 0px 10px #000 inset, 0px 0px 10px #000;
       transform: translateY(-5px);
     }
@@ -57,7 +51,11 @@ export const StyledGame = styled.div`
       letter-spacing: 1px;
       font-weight: 700;
       text-shadow: 1px 1px 10px #000;
-      text-align: center;
     }
+  }
+
+  .loader{
+    margin: 6rem 0;
+    padding: 10px;
   }
 `;
