@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const StyledHome = styled.div`
   .title {
     letter-spacing: 2px;
@@ -16,7 +15,7 @@ export const StyledHome = styled.div`
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    grid-gap:  30px;
+    grid-gap: 30px;
     justify-items: center;
     align-items: center;    
   }
@@ -41,11 +40,10 @@ export const StyledHome = styled.div`
       padding: 2px;
     }
 
-    h3{;
+    h3{
       margin-left: 5px;
       position: absolute;
       bottom: 15px;
-      /* color: #fff; */
       border-radius: 5px;
       padding: 5px;
       font-weight: bold;
@@ -69,7 +67,7 @@ export const StyledHome = styled.div`
     img{
       width: 160px;
       height:160px;
-      transition: 0.4s ease-in-out;
+      transition: 0.3s ease-in-out;
       cursor: pointer;
       border-radius: 25px;
       filter: grayscale(50%);

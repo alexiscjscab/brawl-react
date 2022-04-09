@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import {GoHome} from 'react-icons/go';
 
 const NavBar = () => {
 
@@ -18,7 +19,9 @@ const NavBar = () => {
   return (
     <Nav color={colorChange}>
       <div className='home'>
-        <Link to='/'>Home</Link>
+        <Link to='/'> 
+          <GoHome/> 
+        </Link>
       </div>
 
       <div className='nav-links'>
@@ -49,18 +52,18 @@ const Nav = styled.nav`
     display: flex;
     a{
       color: blue;
-      margin-right: 10px;
+      background: #000;
+      border-radius: 999px;
+      padding: 10px;
       text-decoration: none;
-      color: #000;
-      background: #fff;
+      color: #fff;
       font-size: 1.2rem;
-      padding: 6px ;
-      border-radius: 5px;
       letter-spacing: 1px;
       font-weight: 800;
       transition: all 0.3s ease-in-out;
       &:hover{
-        transform: translateY(3px);
+        transform: translateY(3px) scale(1.1);
+        box-shadow: 0 0 10px #fff;
       }
     }
   }
@@ -86,6 +89,7 @@ const Nav = styled.nav`
         transform: translateY(-3px);
         color: #000;
         background: #00ff44 ;
+        box-shadow: 0 0 10px #000;
       }
    }
   }
