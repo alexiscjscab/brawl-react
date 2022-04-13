@@ -16,9 +16,11 @@ export const StyledGame = styled.div`
     margin-top: 20px;
     padding: 10px;
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     justify-items: center;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    justify-content: center;
+    gap: 30px;
   }
 
   .card {
@@ -26,10 +28,13 @@ export const StyledGame = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 5px 0;
-    transition: all 0.3s ease-in-out;
-    padding: 10px;
     text-align: center;
+    width: 160px;
+    margin: 5px 0;
+    padding: 10px;
+    background: rgba(230,230,230,0.5);
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
     &:hover{
       box-shadow: 0px 0px 10px #000 inset, 0px 0px 10px #000;
       transform: translateY(-5px);

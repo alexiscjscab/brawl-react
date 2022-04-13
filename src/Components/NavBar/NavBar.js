@@ -1,32 +1,32 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import {GoHome} from 'react-icons/go';
+import React, { useState } from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+import { GoHome } from "react-icons/go";
 
 const NavBar = () => {
-
   const [colorChange, setColorChange] = useState(false);
+
   const changeColor = () => {
-    if(window.scrollY >= 100) {
+    if (window.scrollY >= 100) {
       setColorChange(true);
-    }else{
+    } else {
       setColorChange(false);
     }
-  }
-  
-  window.addEventListener('scroll', changeColor);
+  };
+
+  window.addEventListener("scroll", changeColor);
 
   return (
     <Nav color={colorChange}>
-      <div className='home'>
-        <Link to='/'> 
-          <GoHome/> 
+      <div className="home">
+        <Link to="/">
+          <GoHome />
         </Link>
       </div>
 
-      <div className='nav-links'>
-        <Link to='/maps'>Maps</Link>
-        <Link to='/game'>Game</Link>
+      <div className="nav-links">
+        <Link to="/maps">Maps</Link>
+        <Link to="/game">Game</Link>
       </div>
     </Nav>
   );
@@ -38,19 +38,18 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: ${props => props.color ? 'transparent' : 'rgba(30,30,30,0.5)'};
+  background: ${(props) =>
+    props.color ? "transparent" : "rgba(30,30,30,0.5)"};
   padding: 0.5rem 1rem;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 2;
-  
-  
 
-  .home{
+  .home {
     margin-left: 10px;
     display: flex;
-    a{
+    a {
       color: blue;
       background: #000;
       border-radius: 999px;
@@ -61,36 +60,37 @@ const Nav = styled.nav`
       letter-spacing: 1px;
       font-weight: 800;
       transition: all 0.3s ease-in-out;
-      &:hover{
+      &:hover {
         transform: translateY(3px) scale(1.1);
-        box-shadow: 0 0 10px #fff;
+        box-shadow: 0 0 10px #000;
+        background: #00ff44;
+        color: #000;
       }
     }
   }
 
-
-  .nav-links{
+  .nav-links {
     display: flex;
     justify-content: space-between;
-    margin-right: 10px ;
+    margin-right: 10px;
 
-    a{
+    a {
       margin-right: 10px;
       text-decoration: none;
       color: #fff;
       font-size: 1.2rem;
-      padding: 6px ;
+      padding: 6px;
       background: #000;
       border-radius: 5px;
       letter-spacing: 1px;
       font-weight: 800;
       transition: all 0.3s ease-in-out;
-      &:hover{
+      &:hover {
         transform: translateY(-3px);
         color: #000;
-        background: #00ff44 ;
+        background: #00ff44;
         box-shadow: 0 0 10px #000;
       }
-   }
+    }
   }
 `;
