@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "086a96c4026a7428bd7a",
+    "revision": "82e44ccd3ab289c916fa",
     "url": "/brawl-react/static/css/main.8380f5ca.chunk.css"
   },
   {
-    "revision": "086a96c4026a7428bd7a",
-    "url": "/brawl-react/static/js/main.086a96c4.chunk.js"
+    "revision": "82e44ccd3ab289c916fa",
+    "url": "/brawl-react/static/js/main.82e44ccd.chunk.js"
   },
   {
     "revision": "d84f6d625b9b475443fa",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/brawl-react/static/js/runtime~main.f161cc52.js"
   },
   {
-    "revision": "0b5791597ffcff4ebd4c5b5c7bb75d71",
+    "revision": "310730111a5f611b78e065f940ad7c60",
     "url": "/brawl-react/index.html"
   }
 ];

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/brawl-react/precache-manifest.d78d5b81c03d1ffd01d0b374b9e924f0.js"
+  "/brawl-react/precache-manifest.84fbc735876ee8b576fbe372807c1aff.js"
 );
 
 workbox.clientsClaim();
